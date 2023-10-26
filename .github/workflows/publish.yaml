@@ -32,4 +32,5 @@ jobs:
           gh workflow run 'Update dependencies' --repo 'kisstamasj/my-app'
           gh workflow run 'Storybook'
         env:
+          GH_TOKEN: ${{ github.token }}
           GITHUB_TOKEN: ${{ secrets.MY_PAT }}
